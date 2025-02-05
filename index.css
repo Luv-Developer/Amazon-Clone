@@ -1,0 +1,728 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html , body{
+    width:100%;
+    height:100%;
+}
+#navbar{
+    width:100%;
+    height:10%;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    background-color: rgb(37, 49, 63);
+    padding:10px 5px;
+}
+#logo img{
+    width:100px;
+    height:60px;
+}
+#logo{
+    width:10%;
+    height:130%;
+    border-radius: 3px;
+    background-image: url("https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png-1.webp");
+    background-position: center;
+    background-size: cover;
+    transition:0.1s;
+}
+#logo:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#location i{
+    color:white;
+}
+#deliever{
+    display: flex;
+    align-items: center;
+    padding:8px 8px;
+    border-radius: 3px;
+    transition:0.1s;
+}
+#box1{
+    color:rgb(201, 200, 200);
+    font-size:2px;
+}
+#box2{
+    font-size:15px;
+    font-weight: bold;
+    color:white;
+}
+#deliever:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#search{
+    width:35%;
+    height:110%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition:0.1s;
+}
+#search:hover{
+    transition:0.1s;
+    border:2px solid rgb(223, 170, 12);
+}
+#select{
+    width:11%;
+    height:100%;
+    font-size:5px;
+    text-align: center;
+    color:rgb(104, 103, 103);
+    transition:0.1s;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border:transparent;
+    padding:5px 5px;
+    border-right: 1px solid rgb(175, 173, 173);
+}
+#select:hover{
+    transition:0.1s;
+    color:black;
+    cursor: pointer;
+    background-color: rgb(221, 221, 221);
+    border:transparent;
+}
+#searchbar{
+    width:80%;
+    height:100%;
+    padding:10px 5px;
+    border:transparent;
+    font-size:15px;
+}
+#logo2{
+    background-color: rgb(240, 198, 81);
+    width:10%;
+    height:100%;
+    padding:12px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition:0.1s;
+    border-left: 2px solid white;
+}
+#logo2:hover{
+    transition:0.1s;
+    background-color:rgb(241, 190, 50);
+    cursor: pointer;
+}
+#language{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height:120%;
+    width:7%;
+    padding:3px 3px;
+    transition:0.1s;
+    margin-left: 5px;
+}
+#language:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#box4 select{
+    width:50%;
+    height:90%;
+    font-size:5px;
+    background-color: transparent;
+    color:white;
+    font-weight: bold;
+    border:transparent;
+    transition:0.1s;
+}
+#box4 select:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#box4{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+#box4 img{
+    width:30%;
+    height:30%;
+    margin-left: 5px;
+}
+#container{
+    padding:8px 8px;
+    width:13%;
+    height:130%;
+    color:white;
+    font-size:10px;
+    border-radius: 5px;
+    transition:0.1s;
+}
+#container:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#container select{
+    width:90%;
+    height:50%;
+    font-size:11px;
+    font-weight: bold;
+    background: transparent;
+    border: transparent;
+    color:white;
+    transition:0.1s;
+}
+#container select:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#signin{
+    width:100%;
+    height:50%;
+    background-color: yellow;
+    color:white;
+}
+#container2{
+    padding:0px 7px;
+    width:8vw;
+    height:9vh;
+    border-radius: 5px;
+    transition:0.1s;
+}
+#container2:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#container2 label{
+    font-size:10px;
+    color:white;
+}
+#container2 p{
+    font-size:17px;
+    font-weight: bold;
+    color:white;
+}
+#cart{
+    padding:5px 5px;
+    width:7vw;
+    height:9vh;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition:0.1s;
+}
+#cart:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#cart i{
+    color:white;
+    font-size:40px;
+}
+#cart label{
+    color:white;
+    font-size:15px;
+    font-weight: bold;
+}
+#subnav{
+    width:100%;
+    height:7%;
+    background-color: rgb(47, 69, 90);
+    padding:5px 3px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+#menu{
+    padding:2px 2px;
+    color:white;
+    display: flex;
+    align-items: center;
+    gap:1px;
+    width:5%;
+    height:100%;
+    border:transparent;
+    background: transparent;
+    border-radius: 5px;
+    transition:0.1s;
+}
+#menu:hover{
+    transition:0.1s;
+    cursor: pointer;
+    border:1px solid white;
+}
+#menu i{
+    font-size:30px;
+}
+#menu label{
+    font-size:15px;
+    font-weight: bold;
+    transition:0.1s;
+}
+#menu label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#fresh{
+    width:5vw;
+    padding:0px 3px;
+    border-radius: 5px;
+    border:transparent;
+    transition:0.1s;
+}
+#fresh:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#fresh select{
+    width:5vw;
+    height:5vh;
+    font-size:15px;
+    color:white;
+    background: transparent;
+    border:transparent;
+    font-weight: bold;
+    transition:0.1s;
+}
+#fresh select:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#mx{
+    width:7vw;
+    height:5vh;
+    padding:0px 5px;
+    border-radius: 5px;
+    border:transparent;
+    transition:0.1s;
+    text-align: center;
+    color:white;
+    transition:0.1s;
+}
+#mx:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#mx label{
+    font-size:10px;
+    transition:0.1s;
+    font-weight: bold;
+    transition:0.1s;
+}
+#mx label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#sell{
+    width:3.5vw;
+    height:5.5vh;
+    padding:2px 5px;
+    border-radius: 5px;
+    border:transparent;
+    transition:0.1s;
+}
+#sell:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#sell label{
+    font-size:10px;
+    font-weight: bold;
+    color:white;
+    transition:0.1s;
+}
+#sell label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#sellers{
+    width:8vw;
+    height:5.5vh;
+    padding:2px 5px;
+    border-radius: 5px;
+    border:transparent;
+    transition:0.1s;
+}
+#sellers:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#sellers label{
+    font-size:10px;
+    font-weight: bold;
+    color:white;
+    transition:0.1s;
+}
+#sellers label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#mobiles{
+    width:5.5vw;
+    height:5.5vh;
+    padding:2px 5px;
+    border-radius: 5px;
+    border:transparent;
+    transition:0.1s;
+}
+#mobiles:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#mobiles label{
+    font-size:10px;
+    font-weight: bold;
+    color:white;
+    transition:0.1s;
+}
+#mobiles label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#deals{
+    width:9vw;
+    height:5.5vh;
+    padding:2px 5px;
+    border-radius: 5px;
+    border:transparent;
+    transition:0.1s;
+}
+#deals:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#deals label{
+    font-size:10px;
+    font-weight: bold;
+    color:white;
+    transition:0.1s;
+}
+#deals label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#Electronics{
+    width:7.5vw;
+    height:5.5vh;
+    padding:2px 5px;
+    border-radius: 5px;
+    border:transparent;
+    transition:0.1s;
+}
+#Electronics:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#Electronics label{
+    font-size:10px;
+    font-weight: bold;
+    color:white;
+    transition:0.1s;
+}
+#Electronics label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#service{
+    width:12vw;
+    height:5.5vh;
+    padding:2px 5px;
+    border-radius: 5px;
+    border:transparent;
+    transition:0.1s;
+}
+#service:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#service label{
+    font-size:10px;
+    font-weight: bold;
+    color:white;
+    transition:0.1s;
+}
+#service label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#amazon{
+    width:8.5vw;
+    height:5.5vh;
+    padding:2px 5px;
+    border-radius: 5px;
+    border:transparent;
+    transition:0.1s;
+}
+#amazon:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#amazon label{
+    font-size:10px;
+    font-weight: bold;
+    color:white;
+    transition:0.1s;
+}
+#amazon label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#prime{
+    width:5.5vw;
+    padding:0px 3px;
+    border-radius: 5px;
+    border:transparent;
+    transition:0.1s;
+}
+#prime:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#prime select{
+    width:5vw;
+    height:5vh;
+    font-size:15px;
+    color:white;
+    background: transparent;
+    border:transparent;
+    font-weight: bold;
+    transition:0.1s;
+}
+#prime select:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#home{
+    width:12vw;
+    height:5.5vh;
+    padding:2px 5px;
+    border-radius: 5px;
+    border:transparent;
+    transition:0.1s;
+}
+#home:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#home label{
+    font-size:10px;
+    font-weight: bold;
+    color:white;
+    transition:0.1s;
+}
+#home label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#release{
+    width:9vw;
+    height:5.5vh;
+    padding:2px 5px;
+    border-radius: 5px;
+    border:transparent;
+    transition:0.1s;
+}
+#release:hover{
+    transition:0.1s;
+    border:1px solid white;
+    cursor: pointer;
+}
+#release label{
+    font-size:10px;
+    font-weight: bold;
+    color:white;
+    transition:0.1s;
+}
+#release label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#large{
+    height:40%;
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img23/GW/P42/Boult_3000x1200-PC._CB543542644_.jpg");
+    background-size: cover;
+    transition:0.1s;
+}
+#large:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#block{
+    width:100%;
+    height:82%;
+    background:linear-gradient(#ffccc4,#ead1c0,#d1cfcf); 
+    padding:20px 20px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.first{
+    margin-left: 6vw;
+}
+#b1{
+    font-size:23px;
+    height:100%;
+    width:28%;
+    border:2px solid white;
+    padding:20px 10px;
+    font-weight: bold;
+    background-color: white;
+}
+#b1 label{
+    margin-left: 0.5vw;
+}
+#blocks{
+    margin-top: 3vh;
+    height:28vh;
+    padding:20px 10px;
+    display: flex;
+    align-items: center;
+    gap:7px;
+}
+#blocks img{
+    width:11vw;
+    height:20vh;
+    transition:0.1s;
+}
+#blocks img:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#p1{
+    width:12vw;
+    height:30vh;
+    line-height: 15px;
+}
+#p1 label{
+    font-size:10px;
+    color:rgb(50, 50, 50);
+    transition:0.1s;
+}
+#p1 label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#p2{
+    width:12vw;
+    height:30vh;
+    line-height: 16px;
+}
+#p2 label{
+    font-size:10px;
+    color:rgb(50, 50, 50);
+    transition:0.1s;
+}
+#p2 label:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#p2 label p{
+    margin-left: 0.5vw;
+}
+#blocks2{
+    height:28vh;
+    padding:0px 10px;
+    display: flex;
+    align-items: center;
+    gap:7px;
+}
+#blocks2 img{
+    width:11vw;
+    height:20vh;
+    transition: 0.1s;
+}
+#blocks2 img:hover{
+    transition:0.1s;
+    cursor: pointer;
+}
+#p1{
+    width:12vw;
+    height:30vh;
+    line-height: 15px;
+}
+#p1 label{
+    font-size:10px;
+    color:rgb(50, 50, 50);
+}
+#p2{
+    width:12vw;
+    height:30vh;
+    line-height: 16px;
+}
+#p2 label{
+    font-size:10px;
+    color:rgb(50, 50, 50);
+}
+#p2 label p{
+    margin-left: 0.5vw;
+}
+#explore{
+    margin-left: 1vw;
+    text-decoration: none;
+    color:rgb(14, 84, 236);
+    font-size:10px;
+    transition:0.1s;
+}
+#explore:hover{
+    transition:0.1s;
+    cursor: pointer;
+    color: rgb(7, 79, 143);
+}
+#block2{
+    width:100%;
+    height:82%;
+    background:linear-gradient(#d1cfcf,#d1cfcf,#d1cfcf); 
+    padding:20px 20px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+#block3{
+    width:100%;
+    height:100%;
+    background:linear-gradient(#d1cfcf,#d1cfcf,#d1cfcf); 
+    padding:20px 20px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+#b5{
+    margin-left: 75px;
+    font-size:23px;
+    height:38%;
+    width:87.5%;
+    border:2px solid white;
+    padding:20px 10px;
+    font-weight: bold;
+    background-color: white;
+    margin-bottom: 370px;
+}
+#b6{
+    margin-left: -10px;
+    font-size:23px;
+    height:120%;
+    width:102%;
+    border:2px solid white;
+    padding:20px 10px;
+    font-weight: bold;
+    background-color: white;
+}
+
